@@ -8,12 +8,15 @@ Le cahier des charges est contenu dans la documentation pour plus de détails.
 pour installer ce projet en local:
 
 1) depuis le serveur frontend:
+
     cd frontend
 
 2) installer les dépendances:
+
     npm install
 
 3) lancer le serveur (port 3000 par défaut)
+
     npm start
 
 Une page web soit s'ouvrir automatiquement après quelques minutes.
