@@ -11,16 +11,22 @@ function SingleMovieContent(){
     },[])
 
 
-    const movieDatas = MovieFetchCtx.loadedMovie
-    console.log("movieDatas",movieDatas)
+
+    const movieDatas:any = MovieFetchCtx.loadedMovie
     
-    
-    if(movieDatas){
+    if(movieDatas !== undefined){
+
+
+        console.log("movieDatas",movieDatas)
+        const title:string = movieDatas.title
+        const overview:string = movieDatas.overview
+        const vote:string = movieDatas.vote_average
+
         return(<main>
             <div className="movieDetails">
-                <h2>{movieDatas.title}</h2>
-                <div>{movieDatas.overview}</div>
-                <div>{movieDatas.vote_average}</div>
+                <h2>{title}</h2>
+                <div>{overview}</div>
+                <div>{vote}</div>
             </div>
             <img src={"https://image.tmdb.org/t/p/w500/"+movieDatas.poster_path}/>
         </main>)

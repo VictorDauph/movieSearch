@@ -22,7 +22,7 @@ function SingleMovie(){
     interface Props{
         headerColour:string,
         backgroundColour:string,
-        textColour:string,
+        textColour:string
     }
 
     const props:Props={

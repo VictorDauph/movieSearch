@@ -1,7 +1,7 @@
 //Importation de useHistory pour  navigation programmatique
 import { useNavigate } from "react-router-dom";
 
-function MovieItem(props){
+function MovieItem(props:any){
     const navigate = useNavigate()
 
     function goToSingleMovie(){

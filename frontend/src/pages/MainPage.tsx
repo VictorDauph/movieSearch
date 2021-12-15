@@ -17,11 +17,13 @@ function MainPage(){
     interface Props{
         headerColour:string,
         backgroundColour:string,
+        textColour:string,
     }
 
     const props:Props={
         headerColour:LightCtx.headerColour,
         backgroundColour:LightCtx.backgroundColour,
+        textColour:LightCtx.textColour,
     }
 
     return(

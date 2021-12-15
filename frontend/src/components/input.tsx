@@ -35,7 +35,7 @@ const Icon = styled.div`
 `;
 
 export const ClearableInput = (props:any) => {
-  let input = useRef()
+  let input = useRef<any>(null)
   function handleChange(event:any){
     props.handleInput(event.target.value)
   }

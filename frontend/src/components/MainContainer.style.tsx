@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 type Props ={
     backgroundColour:string;
+    textColour:string;
 
 }
 

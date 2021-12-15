@@ -9,8 +9,8 @@ export const MovieFetchContext = createContext({
 })
 
 export function MovieFetchContextProvider(props:any){
-    const [loadedMovies,setLoadedMovies]=useState()
-    const [loadedMovie,setLoadedMovie]=useState()
+    const [loadedMovies,setLoadedMovies]=useState<any>()
+    const [loadedMovie,setLoadedMovie]=useState<any>()
 
     function getMovies(getUri:string){
         function initHeadersForFetch(method:string){ 

@@ -4,7 +4,7 @@ import { MovieFetchContext } from '../context/movieFetchContext';
 import MovieItem from './MovieItem';
 
 
-function MovieDisplay(props){
+function MovieDisplay(props:any){
     const MovieFetchCtx=useContext(MovieFetchContext)
     
     useEffect(()=>{
@@ -17,9 +17,12 @@ function MovieDisplay(props){
     },[props.inputValue])
 
     if (MovieFetchCtx.loadedMovies !== undefined){
+        let loadedMovies:any = MovieFetchCtx.loadedMovies
+        let loadedMoviesResults:any = loadedMovies.results
         return(
+            
             <div className="MovieContainer">
-               {MovieFetchCtx.loadedMovies.results.map(movie => ( //MovieFetchCtx.loadedMovies.results est l'array qui contient les données de chaque film à afficher. .map permet de traiter chaque élément du tableau les un après les autres
+               {loadedMoviesResults.map((movie:any) => ( //MovieFetchCtx.loadedMovies.results est l'array qui contient les données de chaque film à afficher. .map permet de traiter chaque élément du tableau les un après les autres
                 <MovieItem {...movie} /> 
             )
             )}
