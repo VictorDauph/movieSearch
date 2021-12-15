@@ -19,4 +19,4 @@ pour installer ce projet en local:
 
     npm start
 
-Une page web soit s'ouvrir automatiquement après quelques minutes.
+Une page web soit s'ouvrir automatiquement après quelques secondes.
