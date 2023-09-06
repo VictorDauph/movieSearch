@@ -1,5 +1,4 @@
 //importation du switch light
-import  MUISwitch  from '@mui/material/Switch';
 
 //importation du light context
 import { useContext } from 'react';
@@ -15,7 +14,7 @@ function LightSwitch(){
     return(
         <div>
             <span className="material-icons">light_mode</span>
-             <MUISwitch onClick={switchClick} /> 
+            <input type="checkbox" onClick={switchClick}/>
             <span className="material-icons">dark_mode</span>
         </div>
     )
